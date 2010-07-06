@@ -1,0 +1,10 @@
+things to do:
+
++- make an omnetextension repository
+- instrument the code to use the signals framework
+- document how to use the dynamic stats recorders
+- add vector selection to the vector recorders
+
+
+- make an omnet repository?
+- merge the inet, emulation, movesims, extension repositories?

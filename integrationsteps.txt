@@ -1,0 +1,7 @@
+To get the dynamic result recorders to work you need to change the following things in
+omnetpp-4.1:
+
+file: omnetpp-4.1/src/envir/envirbase.cc
+line: 986
+current: bool recordsVector = !strcmp(recordingMode, "vector");  // the only vector recorder is "vector"
+change to: bool recordsVector = !strcmp(recordingMode, "vector") /* KPB +++>*/ || !strcmp(recordingMode, "dvector") /*<+++*/;  // the only vector recorders are "vector" and "dvector"
