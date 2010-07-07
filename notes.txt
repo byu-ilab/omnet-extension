@@ -1,10 +1,11 @@
 things to do:
 
 +- make an omnetextension repository
-- instrument the code to use the signals framework
++- instrument the code to use the signals framework
++	clean it up
 - document how to use the dynamic stats recorders
-- add vector selection to the vector recorders
-
 
 - make an omnet repository?
+- add vector selection to the vector recorders
+- instrument the regular recorders to understand a DynamicResultValue or at least an EncapsulatedValue?
 - merge the inet, emulation, movesims, extension repositories?

@@ -1,0 +1,83 @@
+Notes on how to use the dynamic result recorders:
+
+1. Edit Omnetpp4.1 source
+
+file: omnetpp-4.1/src/envir/envirbase.cc
+line: 986
+current: bool recordsVector = !strcmp(recordingMode, "vector");  // the only vector recorder is "vector"
+change to: bool recordsVector = !strcmp(recordingMode, "vector") /* KPB +++>*/ || !strcmp(recordingMode, "dvector") /*<+++*/;  // the only vector recorders are "vector" and "dvector"
+
+Remake the omnetpp4.1 source code.
+
+
+2. Modify include paths in Eclipse projects
+
+- For all projects (emulation, inet, move simulations, and omnetppextention)
+	- From the project properties editor select the Paths and Symbols under C/C++ General.
+	- Add the following paths to all languages and all configurations:
+		- <path-to-omnetpp4.1>/src/envir/
+		- <path-to-omnetpp4.1>/src/common/
+		- <path-to-omnetpp4.1>/include/platdep
+
+Build; fix any errors if necessary (double check that the above paths were actually added to the list and are being used in the make commands when building).
+
+
+3. Instrument the code to emit DynamicResultValue objects
+
+The source code for all of the dynamic result recorders is in the omnetpp4.1 extension under src/envir/in the dynamicresultrecorder/s .h and .cc files.
+
+In order to use a dynamic result recorder all emitted values must be encapsulated in a DynamicResultValue object. This object stores a statistics name which the dynamic result recorder uses to validate the signals it receives and to record the signals to their specific statistics instance.  The DynamicResultValue object uses a union over the long, unsigned long, double, const char *, and cObject * types as well as providing the ability to use simtime_t objects, therefore only one type of value can be stored and any one time.  Currently, the dynamic result recorders only support numeric values.
+
+See the VtmdPlugin .h and .cc files for examples on how to use DynamicResultValue objects.
+
+Note that dynamic result recorders and regular or standard result recorders cannot be intermixed at this time since the regular result recorders don't know how to handle DynamicResultValue objects.
+
+
+4. Annotate the NED files
+
+The omentpp4.1 extension defines several dynamic result recorders similar to the regular or standard result recorders in omnetpp4.1 (see Manual Ch 11.2.4, p. 222).  These recorders are identified by the following record modes: dvector, dcount, dlast, dsum, dmean, dmin, dmax, dtimeavg, dstats, and dhistogram (there is no corresponding mode to auto).
+
+These dynamic result recording modes can thus be used in NED files' @statistic properties.  Remember once again not to mix the dynamic result recording modes with the regular or standard recording modes on a single statistic.  It is possible, however, to have one @statistic property that uses the regular recording modes and another that uses the dynamic recording modes as long as this properly reflects what the module's code actually emits.
+
+The dynamic result recorders expect that a @statistic property will have a "pattern" attribute, where the pattern attribute value may be a regular NED pattern that indicates the possible instance names that will be emitted in DynamicResultValue objects.  If there is no pattern attribute then the result recorder tries to use the title attribute as a pattern, and if there is not title attribute it uses the statistic's name (thereby limiting the possible dynamic statistic instances to one).
+
+If the signals and statistics that the module emits are properly annotated in the NED file then the simulation environment will take care of constructing the appropriate result recorders and registering them on their associates signal sources and cComponent objects.
+
+See VideoStreamEmulationJack.ned for an example.
+
+
+5. INI tips
+
+The order in which vector-recording and scalar-recording attributes are set in the ini files is critical to how and  whether the statistical data is actually recorded.  
+
+First of all, for the simulation environment to automatically initialize the dynamic result recorders the recording mode must be set on the statistic name.  For example, say a module in a NED file contains the property annotation: 
+
+@statistic[requesttxdelay](title="requesttxdelay"; pattern="plugin*.socket*.txdelay"; source="txdelay"; record=dvector)
+
+To turn on vector recording from the ini file the following syntax applies:
+
+	<module-name>.<statistic-name>.vector-recording = true.
+
+In the case of dynamic result recorders this will only ensure that a dynamic result recorder is created corresponding to the indicated recording mode, it does not ensure that every instance managed by the rocorder will be written out.  For example, consider what happens if the ini file has the following lines:
+
+	**.somemodule.requesttxdelay.vector-recording = true
+	**.vector-recording = false
+
+This snippet ensures that a dynamic vector recorder is created and associated with the module somemodule, but thereafter all vector recording is turned off so nothing will be written out.  Since the specific instance vectors have a name matching the pattern "plugin*.socket*.txdelay" they will not be written out because their name doesn't correspond to the requesttxdelay statistic name.  To allow vector recording on a specific instance do the following:
+
+	**.somemodule.requesttxdelay.vector-recording = true 	# ensures that dynamic result recorders are created
+	**.somemodule.plugin.socket1.txdelay.vector-recording = true 	# ensures that this vector instance is written out
+	**.vector-recording = false	# turns off all other vector in the whole simulation
+
+To turn on all vector instances for a particular module do the following:
+
+	**.somemodule.requesttxdelay.vector-recording = true 	# ensures that dynamic result recorders are created
+	**.somemodule.**.vector-recording = true 	# ensures that all vector instances of this module are written out
+	**.vector-recording = false 	# turns off all other vector in the whole simulation
+
+The main point is that the statment **.vector-recording = true|false to should come after all of the other vector-recording qualifying statments since it should only apply to the rest of the statistics in the simulation that weren't fine tuned.
+
+The above discussion also applies to the scalar-recording.
+
+
+

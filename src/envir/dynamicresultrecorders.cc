@@ -39,24 +39,24 @@ void * DynamicVectorRecorder::initializeResultValue(const char * result_name)
 	ASSERT(vref_ptr->handle != NULL);
 
 	opp_string_map attributes = getStatisticAttributes();
-//	bool title_set = false;
+	bool title_set = false;
 	for (opp_string_map::iterator it = attributes.begin(); it != attributes.end(); ++it)
 	{
-//		if (!strcmp(it->first.c_str(),"title") )
-//		{
-//			ev.setVectorAttribute(vref_ptr->handle, it->first.c_str(), getPostfixedModeForm(result_name).c_str());
-//			title_set = true;
-//		}
-//		else
-//		{
+		if (!strcmp(it->first.c_str(),"title") )
+		{
+			ev.setVectorAttribute(vref_ptr->handle, it->first.c_str(), getPostfixedModeForm(result_name).c_str());
+			title_set = true;
+		}
+		else
+		{
 			ev.setVectorAttribute(vref_ptr->handle, it->first.c_str(), it->second.c_str());
-//		}
+		}
 	}
 
-//	if (!title_set)
-//	{
-//		ev.setVectorAttribute(vref_ptr->handle, "title", getPostfixedModeForm(result_name).c_str());
-//	}
+	if (!title_set)
+	{
+		ev.setVectorAttribute(vref_ptr->handle, "title", getPostfixedModeForm(result_name).c_str());
+	}
 
 	return static_cast<void *>(vref_ptr);
 }

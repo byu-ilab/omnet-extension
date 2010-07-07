@@ -17,6 +17,38 @@
 
 #define DEBUG_CLASS true
 
+bool EncapsulatedValue::increment()
+{
+	bool did_increment = true;
+	switch(getValueType())
+	{
+	case LONG: 	  ++l; break;
+	case ULONG:   ++ul; break;
+	case DOUBLE:  ++d; break;
+	case SIMTIME: t += 1; break;
+	default: // STRING and OBJECT
+		did_increment = false;
+		break;
+	}
+	return did_increment;
+}
+
+bool EncapsulatedValue::decrement()
+{
+	bool did_decrement = true;
+	switch(getValueType())
+	{
+	case LONG: 	  --l; break;
+	case ULONG:   --ul; break;
+	case DOUBLE:  --d; break;
+	case SIMTIME: t -= 1; break;
+	default: // STRING and OBJECT
+		did_decrement = false;
+		break;
+	}
+	return did_decrement;
+}
+
 CommonStringPool DynamicResultValue::namesPool;
 
 CommonStringPool DynamicResultRecorder::resultNamesPool;

@@ -26,7 +26,7 @@
 
 // Could become the parent class to cTimestampedValue inasmuch this class
 // was patterned off of that one.
-class ENVIR_API EncapsulatedValue : public cObject, public noncopyable
+class ENVIR_API EncapsulatedValue : public cObject, noncopyable
 {
 public:
 	enum ValueType {UNDEF, LONG, ULONG, DOUBLE, SIMTIME, STRING, OBJECT};
@@ -54,6 +54,15 @@ public:
 	EncapsulatedValue(cObject *obj) 	{ setValue(obj); }
 	virtual ~EncapsulatedValue() {}
 	//@}
+
+	/** @name Operators ++ and -- */
+	//@{
+//	virtual EncapsulatedValue & operator++(/*pre*/);
+//	virtual EncapsulatedValue & operator--(/*pre*/);
+	//@}
+
+	virtual bool increment();
+	virtual bool decrement();
 
 	/** @name Setters */
 	//@{
