@@ -17,7 +17,7 @@ Remake the omnetpp4.1 source code.
 	- Add the following paths to all languages and all configurations:
 		- <path-to-omnetpp4.1>/src/envir/
 		- <path-to-omnetpp4.1>/src/common/
-		- <path-to-omnetpp4.1>/include/platdep
+		- <path-to-omnetpp4.1>/include/platdep/
 
 Build; fix any errors if necessary (double check that the above paths were actually added to the list and are being used in the make commands when building).
 

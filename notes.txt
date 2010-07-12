@@ -3,7 +3,7 @@ things to do:
 +- make an omnetextension repository
 +- instrument the code to use the signals framework
 +	clean it up
-- document how to use the dynamic stats recorders
++- document how to use the dynamic stats recorders
 
 - make an omnet repository?
 - add vector selection to the vector recorders
