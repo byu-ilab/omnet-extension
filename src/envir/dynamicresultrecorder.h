@@ -24,6 +24,9 @@
 #include <string.h>
 #include <patternmatcher.h>
 
+/// TODO add stream operators so that the Value wrappers can be WATCHed etc.
+/// TODO make specific value wrapper objects, i.e. specific to long, or unsigned long, etc.
+
 // Could become the parent class to cTimestampedValue inasmuch this class
 // was patterned off of that one.
 class ENVIR_API EncapsulatedValue : public cObject, noncopyable
