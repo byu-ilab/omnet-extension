@@ -15,7 +15,7 @@
 
 #include "dynamicresultrecorder.h"
 
-#define DEBUG_CLASS true
+#define DEBUG_CLASS false
 
 bool EncapsulatedValue::increment()
 {

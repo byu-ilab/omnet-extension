@@ -12,5 +12,6 @@
 #include "DeleteSafeDefs.h"
 #include "simunits.h"
 #include "DebugDef.h"
+#include "EnforceSingleClassInstanceDefs.h"
 
 #endif /* OMNETPPEXTENSION_H_ */
