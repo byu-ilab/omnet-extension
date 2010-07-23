@@ -17,6 +17,7 @@
 #define CMESSAGEEVENTLISTENER_H_
 
 #include "omnetppextension.h"
+#include "cobserver.h"
 
 //---
 
@@ -27,11 +28,17 @@ class cMessageEventDatagram;
  * environment already has an event log recording feature, which message event
  * listeners should not try to replicate; rather the purpose for message event
  * listeners is to perform runtime message event analysis.
+ *
+ * @todo Rename to cMessageEventObserver.  Add super class cObserver.  Make
+ * the Datagram class extend the cObserverDatagram class.
  */
-class cMessageEventListener : public cListener
+class cMessageEventObserver : public cLoggableObserver
 {
+private:
+	static std::string __default_signal_name;
 
 protected:
+
 	/** @name Functions to be implemented by subclasses */
 	//@{
 
@@ -44,31 +51,40 @@ protected:
 
 	//@}
 
-public:
-	/** @name Overridden from cListener */
+	/** @name Implemented from cObserver */
 	//@{
 
 	/**
 	 * Checks that the object pointer is of type cMessageEventDatagram and calls
-	 * handleMessageEventDatagram.
+	 * handleSignal for cMessageEventDatagram objects.
 	 *
-	 * @throw throws a cRuntimeError if the object pointer is not of type
-	 * cMesssageEventDatagram.
+	 * @throw Throws a cRuntimeError if the datagram pointer is not of type
+	 * cMesssageEventDatagram or is NULL.
 	 */
-	virtual void receiveSignal(cComponent *source, simsignal_t signalID, cObject *obj);
+	virtual void handleSignal(cComponent * source, simsignal_t signalID,
+			cObserverDatagram * datagram);
+
+public:
+
+	/**
+	 * Subclasses should implement to return the default signal name (probably
+	 * a static field).
+	 */
+	virtual const std::string & getDefaultSignalName() const { return __default_signal_name; }
 
 	//@}
+
 };
 
 //---
 
-class cMessageEventDatagram : public cObject
+class cMessageEventDatagram : public cObserverDatagram
 {
 private:
 	cMessage * _msg_ptr;
 	int _interface_id;
 
-	void initialize();
+	void initialize(const cMessage * msg, const int & id);
 	void copy(const cMessageEventDatagram & other);
 
 protected:
@@ -80,8 +96,9 @@ protected:
 public:
 	/** @name Constructors, Destructor, and Assignment Operator */
 	//@{
-	cMessageEventDatagram() { initialize(); }
-	cMessageEventDatagram(const cMessageEventDatagram & other) { initialize(); copy(other); }
+	cMessageEventDatagram() { initialize(NULL, -1); }
+	cMessageEventDatagram(const cMessage * msg, const int & id) { initialize(msg, id); }
+	cMessageEventDatagram(const cMessageEventDatagram & other) { initialize(NULL, -1); copy(other); }
 	virtual ~cMessageEventDatagram() { deleteMessage(); }
 
 	cMessageEventDatagram & operator = (const cMessageEventDatagram & other);
