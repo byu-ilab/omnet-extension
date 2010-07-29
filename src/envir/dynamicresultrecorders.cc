@@ -22,7 +22,7 @@ Register_ResultRecorder("dtimeavg", DynamicTimeAverageRecorder);
 Register_ResultRecorder("dstats", DynamicStatsRecorder);
 Register_ResultRecorder("dhistogram", DynamicHistogramRecorder);
 
-#define DEBUG_CLASS true
+#define DEBUG_CLASS false
 
 //---
 

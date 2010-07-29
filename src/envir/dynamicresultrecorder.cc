@@ -69,6 +69,7 @@ void DynamicResultRecorder::init(cComponent *component, const char *statisticNam
 	cProperty *property = getComponent()->getProperties()->get("statistic", getStatisticName());
 	if (property == NULL)
 	{
+		LOG_DEBUG_LN("no statistic property specified");
 		return;
 	}
 
@@ -87,7 +88,7 @@ void DynamicResultRecorder::init(cComponent *component, const char *statisticNam
 
 	// TODO make the pattern settings configurable?
 	matcher.setPattern(pattern, true, true, true);
-	LOG_DEBUG_LN("Initialized: mode: "<<getRecordingMode()<<"\t\t pattern: "<<pattern);
+	LOG_DEBUG_LN("Initialized: mode: "<<getRecordingMode()<<"\t with pattern: "<<pattern<<"\ton component: "<<component->getFullPath());
 }
 
 bool DynamicResultRecorder::matchesPattern(const char * line)

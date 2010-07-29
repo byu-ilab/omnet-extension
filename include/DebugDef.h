@@ -22,11 +22,11 @@
 		std::string classname = file.substr(slash_pos, dot_pos - slash_pos); \
 		std::cout << classname << "::" << __FUNCTION__ << "::" << __LINE__ << " "; }
 
-	#define LOG_DEBUG_APPEND(STREAM_SEQ) if (DEBUG_CLASS) { std::cout << STREAM_SEQ; }
+	#define LOG_DEBUG_APPEND(STREAM_SEQ) if (DEBUG_CLASS) { std::cout << STREAM_SEQ << " "; }
+	#define LOG_DEBUG_APPEND_LN(STREAM_SEQ) if (DEBUG_CLASS) { std::cout << STREAM_SEQ << endl; }
+	#define LOG_DEBUG_LN(STREAM_SEQ) if (DEBUG_CLASS) { LOG_DEBUG_WHERE LOG_DEBUG_APPEND_LN(STREAM_SEQ) }
 
-	#define LOG_DEBUG_LN(STREAM_SEQ) if (DEBUG_CLASS) { LOG_DEBUG_WHERE LOG_DEBUG_APPEND(STREAM_SEQ<<std::endl) }
-
-	#define LOG_DEBUG_FUN_BEGIN(STREAM_SEQ) LOG_DEBUG_LN(FUN_BEGIN<<" "<<STREAM_SEQ)
+	#define LOG_DEBUG_FUN_BEGIN(STREAM_SEQ) LOG_DEBUG_APPEND_LN("") LOG_DEBUG_LN(FUN_BEGIN<<" "<<STREAM_SEQ)
 	#define LOG_DEBUG_FUN_END(STREAM_SEQ) LOG_DEBUG_LN(FUN_END<<" "<<STREAM_SEQ)
 	#define PAUSE_DEBUG(STREAM_SEQ) LOG_DEBUG_WHERE LOG_DEBUG_APPEND(STREAM_SEQ) if (DEBUG_CLASS) { char dummy; cin >> dummy; }
 	#define DEBUG_BLOCK(CODE) if (DEBUG_CLASS) { CODE; }
@@ -35,6 +35,7 @@
 	#define LOG_DEBUG(STREAM_SEQ)
 	#define LOG_DEBUG_WHERE
 	#define LOG_DEBUG_APPEND(STREAM_SEQ)
+	#define LOG_DEBUG_APPEND_LN(STREAM_SEQ)
 	#define LOG_DEBUG_LN(STREAM_SEQ)
 	#define LOG_DEBUG_FUN_BEGIN
 	#define LOG_DEBUG_FUN_END
