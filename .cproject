@@ -203,7 +203,6 @@
 </toolChain>
 </folderInfo>
 <sourceEntries>
-<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
 <entry excluding="/omnetpp-4.1extension/src" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
 </sourceEntries>
 </configuration>
@@ -695,9 +694,8 @@
 </toolChain>
 </folderInfo>
 <sourceEntries>
+<entry excluding="omnetpp4.1extension/omentpp4.1extension|/omnetpp-4.1extension/omnetpp4.1extension/omentpp4.1extension|/omnetpp-4.1extension/src" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
 <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="omnetpp4.1extension/omentpp4.1extension"/>
-<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
-<entry excluding="/omnetpp-4.1extension/omnetpp4.1extension/omentpp4.1extension|/omnetpp-4.1extension/src" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
 </sourceEntries>
 </configuration>
 </storageModule>
