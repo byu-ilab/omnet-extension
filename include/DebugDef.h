@@ -11,7 +11,7 @@
 #define FUN_BEGIN "<function begin>"
 #define FUN_END "<function end>"
 
-#define DEBUG
+#define DEBUG true
 #ifdef DEBUG
 	#include <iostream>
 	//#define EnableDebugging(VALUE) bool debug_class = VALUE;
@@ -23,7 +23,7 @@
 		std::cout << classname << "::" << __FUNCTION__ << "::" << __LINE__ << " "; }
 
 	#define LOG_DEBUG_APPEND(STREAM_SEQ) if (DEBUG_CLASS) { std::cout << STREAM_SEQ << " "; }
-	#define LOG_DEBUG_APPEND_LN(STREAM_SEQ) if (DEBUG_CLASS) { std::cout << STREAM_SEQ << endl; }
+	#define LOG_DEBUG_APPEND_LN(STREAM_SEQ) if (DEBUG_CLASS) { std::cout <<"At "<<simTime()<<": "<< STREAM_SEQ << endl; }
 	#define LOG_DEBUG_LN(STREAM_SEQ) if (DEBUG_CLASS) { LOG_DEBUG_WHERE LOG_DEBUG_APPEND_LN(STREAM_SEQ) }
 
 	#define LOG_DEBUG_FUN_BEGIN(STREAM_SEQ) LOG_DEBUG_APPEND_LN("") LOG_DEBUG_LN(FUN_BEGIN<<" "<<STREAM_SEQ)
