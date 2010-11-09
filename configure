@@ -1,5 +1,0 @@
-#!/bin/bash
-PARENT_DIR=`(cd ..;pwd)`
-sed "s|/home/tester/sim|$PARENT_DIR|" < .cproject > .cproject.tmp
-mv .cproject.tmp ./.cproject
-
