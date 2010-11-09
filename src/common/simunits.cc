@@ -7,7 +7,7 @@
 
 #include "simunits.h"
 
-ByteUnit determineByteUnit(unsigned long num_bytes, ByteUnitType type)
+ByteUnit determineByteUnit(uint64 num_bytes, ByteUnitType type)
 {
 	if (type == unittype_base2)
 	{
@@ -81,12 +81,12 @@ ByteUnit determineByteUnit(unsigned long num_bytes, ByteUnitType type)
 	return unit_B;
 }
 
-long getByteUnitConstant(unsigned long num_bytes, ByteUnitType type)
+uint64 getByteUnitConstant(uint64 num_bytes, ByteUnitType type)
 {
 	return getByteUnitConstant(determineByteUnit(num_bytes, type), type);
 }
 
-long getByteUnitConstant(ByteUnit unit, ByteUnitType type)
+uint64 getByteUnitConstant(ByteUnit unit, ByteUnitType type)
 {
 	switch(unit)
 	{
