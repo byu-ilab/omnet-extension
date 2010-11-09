@@ -1,0 +1,11 @@
+This document shows how to add the needed paths to a project.  The extension, as well as each project referencing the extension will need these paths added.
+
+From the project properties editor under "C/C++ General", select "Paths and Symbols"
+
+These are the paths you must add to all languages and configurations:
+<path-to-omnetpp4.1>/src/envir/
+<path-to-omnetpp4.1>/src/common/
+<path-to-omnetpp4.1>/include/platdep/
+
+To add a path to all languages/configurations, select "Add..." on the right.  In the Add menu, check "Add to all Configurations" and "Add to all Languages", then browse the File System for the path.  Select OK.
+
