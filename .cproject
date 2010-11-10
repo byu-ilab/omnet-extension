@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+<storageModule moduleId="org.eclipse.cdt.core.settings">
+<cconfiguration id="org.omnetpp.cdt.gnu.config.debug.1861180476">
+<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.omnetpp.cdt.gnu.config.debug.1861180476" moduleId="org.eclipse.cdt.core.settings" name="gcc-debug">
+<externalSettings>
+<externalSetting languages="cdt.managedbuild.tool.gnu.assembler.input.124634871"/>
+</externalSettings>
+<extensions>
+<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.MachO" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+</extensions>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<configuration artifactName="omentpp4.1extension" buildProperties="" description="" id="org.omnetpp.cdt.gnu.config.debug.1861180476" name="gcc-debug" parent="org.omnetpp.cdt.gnu.config.debug">
+<folderInfo id="org.omnetpp.cdt.gnu.config.debug.1861180476." name="/" resourcePath="">
+<toolChain id="org.omnetpp.cdt.gnu.toolchain.debug.2043160342" name="GCC for OMNeT++" superClass="org.omnetpp.cdt.gnu.toolchain.debug">
+<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.MachO;org.eclipse.cdt.core.PE" id="org.omnetpp.cdt.targetPlatform.1140282554" isAbstract="false" name="Windows, Linux, Mac" osList="win32,linux,macosx" superClass="org.omnetpp.cdt.targetPlatform"/>
+<builder id="org.omnetpp.cdt.gnu.builder.debug.279573023" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="OMNeT++ Make Builder (opp_makemake)" superClass="org.omnetpp.cdt.gnu.builder.debug"/>
+<tool id="cdt.managedbuild.tool.gnu.archiver.base.910959563" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.209025516" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+<option id="gnu.cpp.compiler.option.include.paths.1657993661" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src/common"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/include/platdep"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src/envir"/>
+</option>
+<option id="gnu.cpp.compiler.option.preprocessor.undef.2050486112" name="Undefined symbols (-U)" superClass="gnu.cpp.compiler.option.preprocessor.undef" valueType="undefDefinedSymbols">
+<listOptionValue builtIn="false" value="__x86_64"/>
+<listOptionValue builtIn="false" value="__FLT_EVAL_METHOD__"/>
+<listOptionValue builtIn="false" value="__FLT_EPSILON__"/>
+<listOptionValue builtIn="false" value="__DEC64_MANT_DIG__"/>
+<listOptionValue builtIn="false" value="__FLT_MAX_EXP__"/>
+<listOptionValue builtIn="false" value="__DBL_MIN__"/>
+<listOptionValue builtIn="false" value="__LDBL_EPSILON__"/>
+<listOptionValue builtIn="false" value="__DEC64_MIN__"/>
+<listOptionValue builtIn="false" value="__SCHAR_MAX__"/>
+<listOptionValue builtIn="false" value="__DEC128_MANT_DIG__"/>
+<listOptionValue builtIn="false" value="_LP64"/>
+<listOptionValue builtIn="false" value="__DBL_MIN_10_EXP__"/>
+<listOptionValue builtIn="false" value="__unix__"/>
+<listOptionValue builtIn="false" value="__DBL_DENORM_MIN__"/>
+<listOptionValue builtIn="false" value="__REGISTER_PREFIX__"/>
+<listOptionValue builtIn="false" value="__SHRT_MAX__"/>
+<listOptionValue builtIn="false" value="__DBL_HAS_DENORM__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_WCHAR_T__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_PTRDIFF_T__"/>
+<listOptionValue builtIn="false" value="__DEC32_MAX__"/>
+<listOptionValue builtIn="false" value="__linux__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_DOUBLE__"/>
+<listOptionValue builtIn="false" value="__LDBL_HAS_QUIET_NAN__"/>
+<listOptionValue builtIn="false" value="__FLT_MIN_EXP__"/>
+<listOptionValue builtIn="false" value="__LDBL_MANT_DIG__"/>
+<listOptionValue builtIn="false" value="__DEC32_EPSILON__"/>
+<listOptionValue builtIn="false" value="__FLT_DENORM_MIN__"/>
+<listOptionValue builtIn="false" value="__CHAR32_TYPE__"/>
+<listOptionValue builtIn="false" value="__LDBL_DIG__"/>
+<listOptionValue builtIn="false" value="__ELF__"/>
+<listOptionValue builtIn="false" value="__LDBL_DENORM_MIN__"/>
+<listOptionValue builtIn="false" value="__DEC32_MIN_EXP__"/>
+<listOptionValue builtIn="false" value="__DEC128_MAX__"/>
+<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8"/>
+<listOptionValue builtIn="false" value="_GNU_SOURCE"/>
+<listOptionValue builtIn="false" value="__FLT_MIN_10_EXP__"/>
+<listOptionValue builtIn="false" value="__WCHAR_MAX__"/>
+<listOptionValue builtIn="false" value="__LDBL_HAS_DENORM__"/>
+<listOptionValue builtIn="false" value="__GNUC_PATCHLEVEL__"/>
+<listOptionValue builtIn="false" value="__DEC32_SUBNORMAL_MIN__"/>
+<listOptionValue builtIn="false" value="__GXX_ABI_VERSION"/>
+<listOptionValue builtIn="false" value="__SIZEOF_POINTER__"/>
+<listOptionValue builtIn="false" value="__SSE2_MATH__"/>
+<listOptionValue builtIn="false" value="WITH_NETBUILDER"/>
+<listOptionValue builtIn="false" value="__DBL_MIN_EXP__"/>
+<listOptionValue builtIn="false" value="__LDBL_HAS_INFINITY__"/>
+<listOptionValue builtIn="false" value="__FLT_MAX_10_EXP__"/>
+<listOptionValue builtIn="false" value="__DEC64_MIN_EXP__"/>
+<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4"/>
+<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1"/>
+<listOptionValue builtIn="false" value="__SIZEOF_LONG_DOUBLE__"/>
+<listOptionValue builtIn="false" value="__DEC32_MIN__"/>
+<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2"/>
+<listOptionValue builtIn="false" value="__MMX__"/>
+<listOptionValue builtIn="false" value="__EXCEPTIONS"/>
+<listOptionValue builtIn="false" value="__LDBL_MIN_10_EXP__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_LONG_LONG__"/>
+<listOptionValue builtIn="false" value="__x86_64__"/>
+<listOptionValue builtIn="false" value="__DEPRECATED"/>
+<listOptionValue builtIn="false" value="__DEC64_MAX_EXP__"/>
+<listOptionValue builtIn="false" value="__FLT_MIN__"/>
+<listOptionValue builtIn="false" value="__DBL_EPSILON__"/>
+<listOptionValue builtIn="false" value="__GXX_RTTI"/>
+<listOptionValue builtIn="false" value="XMLPARSER"/>
+<listOptionValue builtIn="false" value="__LDBL_MAX_EXP__"/>
+<listOptionValue builtIn="false" value="__DEC128_MAX_EXP__"/>
+<listOptionValue builtIn="false" value="__k8__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_SIZE_T__"/>
+<listOptionValue builtIn="false" value="__DBL_DIG__"/>
+<listOptionValue builtIn="false" value="_FORTIFY_SOURCE"/>
+<listOptionValue builtIn="false" value="__FLT_MANT_DIG__"/>
+<listOptionValue builtIn="false" value="__SSE__"/>
+<listOptionValue builtIn="false" value="__FLT_RADIX__"/>
+<listOptionValue builtIn="false" value="__GNUC_MINOR__"/>
+<listOptionValue builtIn="false" value="__DEC64_MAX__"/>
+<listOptionValue builtIn="false" value="__BIGGEST_ALIGNMENT__"/>
+<listOptionValue builtIn="false" value="__gnu_linux__"/>
+<listOptionValue builtIn="false" value="__INTMAX_TYPE__"/>
+<listOptionValue builtIn="false" value="__FLT_DIG__"/>
+<listOptionValue builtIn="false" value="__LDBL_MIN_EXP__"/>
+<listOptionValue builtIn="false" value="__DECIMAL_BID_FORMAT__"/>
+<listOptionValue builtIn="false" value="__INT_MAX__"/>
+<listOptionValue builtIn="false" value="__DEC64_EPSILON__"/>
+<listOptionValue builtIn="false" value="__LONG_LONG_MAX__"/>
+<listOptionValue builtIn="false" value="__amd64"/>
+<listOptionValue builtIn="false" value="__DBL_HAS_INFINITY__"/>
+<listOptionValue builtIn="false" value="__FLT_HAS_QUIET_NAN__"/>
+<listOptionValue builtIn="false" value="__DBL_MAX_10_EXP__"/>
+<listOptionValue builtIn="false" value="__FLT_HAS_DENORM__"/>
+<listOptionValue builtIn="false" value="__STDC__"/>
+<listOptionValue builtIn="false" value="__LDBL_MIN__"/>
+<listOptionValue builtIn="false" value="__NO_INLINE__"/>
+<listOptionValue builtIn="false" value="__SSE2__"/>
+<listOptionValue builtIn="false" value="__DEC128_EPSILON__"/>
+<listOptionValue builtIn="false" value="__GNUC__"/>
+<listOptionValue builtIn="false" value="WITH_PARSIM"/>
+<listOptionValue builtIn="false" value="__SIZEOF_FLOAT__"/>
+<listOptionValue builtIn="false" value="__INTMAX_MAX__"/>
+<listOptionValue builtIn="false" value="__DEC32_MAX_EXP__"/>
+<listOptionValue builtIn="false" value="__unix"/>
+<listOptionValue builtIn="false" value="__k8"/>
+<listOptionValue builtIn="false" value="__VERSION__"/>
+<listOptionValue builtIn="false" value="__DEC128_MIN_EXP__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_WINT_T__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_INT__"/>
+<listOptionValue builtIn="false" value="__USER_LABEL_PREFIX__"/>
+<listOptionValue builtIn="false" value="__LONG_MAX__"/>
+<listOptionValue builtIn="false" value="__SSP__"/>
+<listOptionValue builtIn="false" value="__PTRDIFF_TYPE__"/>
+<listOptionValue builtIn="false" value="__CHAR_BIT__"/>
+<listOptionValue builtIn="false" value="__DEC128_SUBNORMAL_MIN__"/>
+<listOptionValue builtIn="false" value="__DBL_HAS_QUIET_NAN__"/>
+<listOptionValue builtIn="false" value="__SSE_MATH__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_SHORT__"/>
+<listOptionValue builtIn="false" value="__DBL_MAX_EXP__"/>
+<listOptionValue builtIn="false" value="__WINT_TYPE__"/>
+<listOptionValue builtIn="false" value="__DEC_EVAL_METHOD__"/>
+<listOptionValue builtIn="false" value="__DEC64_SUBNORMAL_MIN__"/>
+<listOptionValue builtIn="false" value="__amd64__"/>
+<listOptionValue builtIn="false" value="__DBL_MANT_DIG__"/>
+<listOptionValue builtIn="false" value="__FLT_MAX__"/>
+<listOptionValue builtIn="false" value="__linux"/>
+<listOptionValue builtIn="false" value="__GNUC_GNU_INLINE__"/>
+<listOptionValue builtIn="false" value="__DEC128_MIN__"/>
+<listOptionValue builtIn="false" value="__SIZE_TYPE__"/>
+<listOptionValue builtIn="false" value="__FLT_HAS_INFINITY__"/>
+<listOptionValue builtIn="false" value="__DEC32_MANT_DIG__"/>
+<listOptionValue builtIn="false" value="__GCC_HAVE_DWARF2_CFI_ASM"/>
+<listOptionValue builtIn="false" value="__STDC_HOSTED__"/>
+<listOptionValue builtIn="false" value="linux"/>
+<listOptionValue builtIn="false" value="__DECIMAL_DIG__"/>
+<listOptionValue builtIn="false" value="__LDBL_MAX_10_EXP__"/>
+<listOptionValue builtIn="false" value="__GXX_WEAK__"/>
+<listOptionValue builtIn="false" value="__DBL_MAX__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_LONG__"/>
+<listOptionValue builtIn="false" value="__UINTMAX_TYPE__"/>
+<listOptionValue builtIn="false" value="__LDBL_MAX__"/>
+<listOptionValue builtIn="false" value="__FINITE_MATH_ONLY__"/>
+<listOptionValue builtIn="false" value="__WCHAR_TYPE__"/>
+<listOptionValue builtIn="false" value="__LP64__"/>
+<listOptionValue builtIn="false" value="__GNUG__"/>
+<listOptionValue builtIn="false" value="unix"/>
+<listOptionValue builtIn="false" value="__CHAR16_TYPE__"/>
+<listOptionValue builtIn="false" value="__cplusplus"/>
+</option>
+<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1036410462" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.1352118989" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+<option id="gnu.c.compiler.option.include.paths.53641095" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src/common"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/include/platdep"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src/envir"/>
+</option>
+<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1981345626" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.c.linker.base.413880478" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.2012649924" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1260939048" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+</inputType>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.assembler.base.623294386" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+<option id="gnu.both.asm.option.include.paths.2112809268" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src/common"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/include/platdep"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src/envir"/>
+</option>
+<inputType id="cdt.managedbuild.tool.gnu.assembler.input.124634871" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+</tool>
+</toolChain>
+</folderInfo>
+<sourceEntries>
+<entry excluding="out|/omnetpp-4.1extension/src" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+</sourceEntries>
+</configuration>
+</storageModule>
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+<storageModule moduleId="scannerConfiguration">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'gcc -E -P -v -dD &quot;${plugin_state_location}/${specs_file}&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'g++ -E -P -v -dD &quot;${plugin_state_location}/specs.cpp&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'gcc -E -P -v -dD &quot;${plugin_state_location}/specs.c&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.omnetpp.cdt.OmnetppGCCPerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<scannerConfigBuildInfo instanceId="org.omnetpp.cdt.gnu.config.debug.1861180476">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.omnetpp.cdt.OmnetppGCCPerProjectProfile"/>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'gcc -E -P -v -dD &quot;${plugin_state_location}/${specs_file}&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'g++ -E -P -v -dD &quot;${plugin_state_location}/specs.cpp&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'gcc -E -P -v -dD &quot;${plugin_state_location}/specs.c&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.omnetpp.cdt.OmnetppGCCPerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="org.omnetpp.cdt.gnu.config.release.250470910">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.omnetpp.cdt.OmnetppGCCPerProjectProfile"/>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'gcc -E -P -v -dD &quot;${plugin_state_location}/${specs_file}&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'g++ -E -P -v -dD &quot;${plugin_state_location}/specs.cpp&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'gcc -E -P -v -dD &quot;${plugin_state_location}/specs.c&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.omnetpp.cdt.OmnetppGCCPerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+</storageModule>
+</cconfiguration>
+<cconfiguration id="org.omnetpp.cdt.gnu.config.release.250470910">
+<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.omnetpp.cdt.gnu.config.release.250470910" moduleId="org.eclipse.cdt.core.settings" name="gcc-release">
+<externalSettings/>
+<extensions>
+<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.MachO" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+</extensions>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<configuration artifactName="omentpp4.1extension" buildProperties="" description="" id="org.omnetpp.cdt.gnu.config.release.250470910" name="gcc-release" parent="org.omnetpp.cdt.gnu.config.release">
+<folderInfo id="org.omnetpp.cdt.gnu.config.release.250470910." name="/" resourcePath="">
+<toolChain id="org.omnetpp.cdt.gnu.toolchain.release.1830051240" name="GCC for OMNeT++" superClass="org.omnetpp.cdt.gnu.toolchain.release">
+<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.MachO;org.eclipse.cdt.core.PE" id="org.omnetpp.cdt.targetPlatform.1836169985" isAbstract="false" name="Windows, Linux, Mac" osList="win32,linux,macosx" superClass="org.omnetpp.cdt.targetPlatform"/>
+<builder id="org.omnetpp.cdt.gnu.builder.release.706196615" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="OMNeT++ Make Builder (opp_makemake)" superClass="org.omnetpp.cdt.gnu.builder.release"/>
+<tool id="cdt.managedbuild.tool.gnu.archiver.base.1926814529" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.932554958" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+<option id="gnu.cpp.compiler.option.include.paths.477812429" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src/envir"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src/common"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/include/platdep"/>
+</option>
+<option id="gnu.cpp.compiler.option.preprocessor.undef.1939988093" name="Undefined symbols (-U)" superClass="gnu.cpp.compiler.option.preprocessor.undef" valueType="undefDefinedSymbols">
+<listOptionValue builtIn="false" value="__x86_64"/>
+<listOptionValue builtIn="false" value="__FLT_EVAL_METHOD__"/>
+<listOptionValue builtIn="false" value="__FLT_EPSILON__"/>
+<listOptionValue builtIn="false" value="__DEC64_MANT_DIG__"/>
+<listOptionValue builtIn="false" value="__FLT_MAX_EXP__"/>
+<listOptionValue builtIn="false" value="__DBL_MIN__"/>
+<listOptionValue builtIn="false" value="__LDBL_EPSILON__"/>
+<listOptionValue builtIn="false" value="__DEC64_MIN__"/>
+<listOptionValue builtIn="false" value="__SCHAR_MAX__"/>
+<listOptionValue builtIn="false" value="__DEC128_MANT_DIG__"/>
+<listOptionValue builtIn="false" value="_LP64"/>
+<listOptionValue builtIn="false" value="__DBL_MIN_10_EXP__"/>
+<listOptionValue builtIn="false" value="__unix__"/>
+<listOptionValue builtIn="false" value="__DBL_DENORM_MIN__"/>
+<listOptionValue builtIn="false" value="__REGISTER_PREFIX__"/>
+<listOptionValue builtIn="false" value="__SHRT_MAX__"/>
+<listOptionValue builtIn="false" value="__DBL_HAS_DENORM__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_WCHAR_T__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_PTRDIFF_T__"/>
+<listOptionValue builtIn="false" value="__DEC32_MAX__"/>
+<listOptionValue builtIn="false" value="__linux__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_DOUBLE__"/>
+<listOptionValue builtIn="false" value="__LDBL_HAS_QUIET_NAN__"/>
+<listOptionValue builtIn="false" value="__FLT_MIN_EXP__"/>
+<listOptionValue builtIn="false" value="__LDBL_MANT_DIG__"/>
+<listOptionValue builtIn="false" value="__DEC32_EPSILON__"/>
+<listOptionValue builtIn="false" value="__FLT_DENORM_MIN__"/>
+<listOptionValue builtIn="false" value="__CHAR32_TYPE__"/>
+<listOptionValue builtIn="false" value="__LDBL_DIG__"/>
+<listOptionValue builtIn="false" value="__ELF__"/>
+<listOptionValue builtIn="false" value="__LDBL_DENORM_MIN__"/>
+<listOptionValue builtIn="false" value="__DEC32_MIN_EXP__"/>
+<listOptionValue builtIn="false" value="__DEC128_MAX__"/>
+<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8"/>
+<listOptionValue builtIn="false" value="_GNU_SOURCE"/>
+<listOptionValue builtIn="false" value="__FLT_MIN_10_EXP__"/>
+<listOptionValue builtIn="false" value="__WCHAR_MAX__"/>
+<listOptionValue builtIn="false" value="__LDBL_HAS_DENORM__"/>
+<listOptionValue builtIn="false" value="__GNUC_PATCHLEVEL__"/>
+<listOptionValue builtIn="false" value="__DEC32_SUBNORMAL_MIN__"/>
+<listOptionValue builtIn="false" value="__GXX_ABI_VERSION"/>
+<listOptionValue builtIn="false" value="__SIZEOF_POINTER__"/>
+<listOptionValue builtIn="false" value="__SSE2_MATH__"/>
+<listOptionValue builtIn="false" value="__DBL_MIN_EXP__"/>
+<listOptionValue builtIn="false" value="__LDBL_HAS_INFINITY__"/>
+<listOptionValue builtIn="false" value="__FLT_MAX_10_EXP__"/>
+<listOptionValue builtIn="false" value="__DEC64_MIN_EXP__"/>
+<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4"/>
+<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1"/>
+<listOptionValue builtIn="false" value="__SIZEOF_LONG_DOUBLE__"/>
+<listOptionValue builtIn="false" value="__DEC32_MIN__"/>
+<listOptionValue builtIn="false" value="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2"/>
+<listOptionValue builtIn="false" value="__MMX__"/>
+<listOptionValue builtIn="false" value="__EXCEPTIONS"/>
+<listOptionValue builtIn="false" value="__LDBL_MIN_10_EXP__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_LONG_LONG__"/>
+<listOptionValue builtIn="false" value="__x86_64__"/>
+<listOptionValue builtIn="false" value="__DEPRECATED"/>
+<listOptionValue builtIn="false" value="__DEC64_MAX_EXP__"/>
+<listOptionValue builtIn="false" value="__FLT_MIN__"/>
+<listOptionValue builtIn="false" value="__DBL_EPSILON__"/>
+<listOptionValue builtIn="false" value="__GXX_RTTI"/>
+<listOptionValue builtIn="false" value="__LDBL_MAX_EXP__"/>
+<listOptionValue builtIn="false" value="__DEC128_MAX_EXP__"/>
+<listOptionValue builtIn="false" value="__k8__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_SIZE_T__"/>
+<listOptionValue builtIn="false" value="__DBL_DIG__"/>
+<listOptionValue builtIn="false" value="_FORTIFY_SOURCE"/>
+<listOptionValue builtIn="false" value="__FLT_MANT_DIG__"/>
+<listOptionValue builtIn="false" value="__SSE__"/>
+<listOptionValue builtIn="false" value="__FLT_RADIX__"/>
+<listOptionValue builtIn="false" value="__GNUC_MINOR__"/>
+<listOptionValue builtIn="false" value="__DEC64_MAX__"/>
+<listOptionValue builtIn="false" value="__BIGGEST_ALIGNMENT__"/>
+<listOptionValue builtIn="false" value="__gnu_linux__"/>
+<listOptionValue builtIn="false" value="__INTMAX_TYPE__"/>
+<listOptionValue builtIn="false" value="__FLT_DIG__"/>
+<listOptionValue builtIn="false" value="__LDBL_MIN_EXP__"/>
+<listOptionValue builtIn="false" value="__DECIMAL_BID_FORMAT__"/>
+<listOptionValue builtIn="false" value="__INT_MAX__"/>
+<listOptionValue builtIn="false" value="__DEC64_EPSILON__"/>
+<listOptionValue builtIn="false" value="__LONG_LONG_MAX__"/>
+<listOptionValue builtIn="false" value="__amd64"/>
+<listOptionValue builtIn="false" value="__DBL_HAS_INFINITY__"/>
+<listOptionValue builtIn="false" value="__FLT_HAS_QUIET_NAN__"/>
+<listOptionValue builtIn="false" value="__DBL_MAX_10_EXP__"/>
+<listOptionValue builtIn="false" value="__FLT_HAS_DENORM__"/>
+<listOptionValue builtIn="false" value="__STDC__"/>
+<listOptionValue builtIn="false" value="__LDBL_MIN__"/>
+<listOptionValue builtIn="false" value="__NO_INLINE__"/>
+<listOptionValue builtIn="false" value="__SSE2__"/>
+<listOptionValue builtIn="false" value="__DEC128_EPSILON__"/>
+<listOptionValue builtIn="false" value="__GNUC__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_FLOAT__"/>
+<listOptionValue builtIn="false" value="__INTMAX_MAX__"/>
+<listOptionValue builtIn="false" value="__DEC32_MAX_EXP__"/>
+<listOptionValue builtIn="false" value="__unix"/>
+<listOptionValue builtIn="false" value="__k8"/>
+<listOptionValue builtIn="false" value="__VERSION__"/>
+<listOptionValue builtIn="false" value="__DEC128_MIN_EXP__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_WINT_T__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_INT__"/>
+<listOptionValue builtIn="false" value="__USER_LABEL_PREFIX__"/>
+<listOptionValue builtIn="false" value="__LONG_MAX__"/>
+<listOptionValue builtIn="false" value="__SSP__"/>
+<listOptionValue builtIn="false" value="__PTRDIFF_TYPE__"/>
+<listOptionValue builtIn="false" value="__CHAR_BIT__"/>
+<listOptionValue builtIn="false" value="__DEC128_SUBNORMAL_MIN__"/>
+<listOptionValue builtIn="false" value="__DBL_HAS_QUIET_NAN__"/>
+<listOptionValue builtIn="false" value="__SSE_MATH__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_SHORT__"/>
+<listOptionValue builtIn="false" value="__DBL_MAX_EXP__"/>
+<listOptionValue builtIn="false" value="__WINT_TYPE__"/>
+<listOptionValue builtIn="false" value="__DEC_EVAL_METHOD__"/>
+<listOptionValue builtIn="false" value="__DEC64_SUBNORMAL_MIN__"/>
+<listOptionValue builtIn="false" value="__amd64__"/>
+<listOptionValue builtIn="false" value="__DBL_MANT_DIG__"/>
+<listOptionValue builtIn="false" value="__FLT_MAX__"/>
+<listOptionValue builtIn="false" value="__linux"/>
+<listOptionValue builtIn="false" value="__GNUC_GNU_INLINE__"/>
+<listOptionValue builtIn="false" value="__DEC128_MIN__"/>
+<listOptionValue builtIn="false" value="__SIZE_TYPE__"/>
+<listOptionValue builtIn="false" value="__FLT_HAS_INFINITY__"/>
+<listOptionValue builtIn="false" value="__DEC32_MANT_DIG__"/>
+<listOptionValue builtIn="false" value="__GCC_HAVE_DWARF2_CFI_ASM"/>
+<listOptionValue builtIn="false" value="__STDC_HOSTED__"/>
+<listOptionValue builtIn="false" value="linux"/>
+<listOptionValue builtIn="false" value="__DECIMAL_DIG__"/>
+<listOptionValue builtIn="false" value="__LDBL_MAX_10_EXP__"/>
+<listOptionValue builtIn="false" value="__GXX_WEAK__"/>
+<listOptionValue builtIn="false" value="__DBL_MAX__"/>
+<listOptionValue builtIn="false" value="__SIZEOF_LONG__"/>
+<listOptionValue builtIn="false" value="__UINTMAX_TYPE__"/>
+<listOptionValue builtIn="false" value="__LDBL_MAX__"/>
+<listOptionValue builtIn="false" value="__FINITE_MATH_ONLY__"/>
+<listOptionValue builtIn="false" value="__WCHAR_TYPE__"/>
+<listOptionValue builtIn="false" value="__LP64__"/>
+<listOptionValue builtIn="false" value="__GNUG__"/>
+<listOptionValue builtIn="false" value="unix"/>
+<listOptionValue builtIn="false" value="__CHAR16_TYPE__"/>
+<listOptionValue builtIn="false" value="__cplusplus"/>
+</option>
+<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1677866307" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.156111332" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+<option id="gnu.c.compiler.option.preprocessor.def.symbols.1461194954" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="WITH_NETBUILDER=1"/>
+<listOptionValue builtIn="false" value="XMLPARSER=expat"/>
+<listOptionValue builtIn="false" value="WITH_PARSIM=1"/>
+</option>
+<option id="gnu.c.compiler.option.include.paths.858555735" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src/envir"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src/common"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/include/platdep"/>
+</option>
+<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1385866014" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1706310517" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1358533004" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.388743323" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+</inputType>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.assembler.base.1415245341" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+<option id="gnu.both.asm.option.include.paths.1703131216" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/src/common"/>
+<listOptionValue builtIn="false" value="/home/tester/sim/omnetpp-4.1/include/platdep"/>
+</option>
+<inputType id="cdt.managedbuild.tool.gnu.assembler.input.615697301" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+</tool>
+</toolChain>
+</folderInfo>
+<sourceEntries>
+<entry excluding="out" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+</sourceEntries>
+</configuration>
+</storageModule>
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+<storageModule moduleId="scannerConfiguration">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'gcc -E -P -v -dD &quot;${plugin_state_location}/${specs_file}&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'g++ -E -P -v -dD &quot;${plugin_state_location}/specs.cpp&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'gcc -E -P -v -dD &quot;${plugin_state_location}/specs.c&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.omnetpp.cdt.OmnetppGCCPerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<scannerConfigBuildInfo instanceId="org.omnetpp.cdt.gnu.config.debug.1861180476">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.omnetpp.cdt.OmnetppGCCPerProjectProfile"/>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'gcc -E -P -v -dD &quot;${plugin_state_location}/${specs_file}&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'g++ -E -P -v -dD &quot;${plugin_state_location}/specs.cpp&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'gcc -E -P -v -dD &quot;${plugin_state_location}/specs.c&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.omnetpp.cdt.OmnetppGCCPerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="org.omnetpp.cdt.gnu.config.release.250470910">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.omnetpp.cdt.OmnetppGCCPerProjectProfile"/>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'gcc -E -P -v -dD &quot;${plugin_state_location}/${specs_file}&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'g++ -E -P -v -dD &quot;${plugin_state_location}/specs.cpp&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-c 'gcc -E -P -v -dD &quot;${plugin_state_location}/specs.c&quot;'" command="sh" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.omnetpp.cdt.OmnetppGCCPerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+</storageModule>
+</cconfiguration>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<project id="omentpp4.1extension.org.omnetpp.cdt.omnetppProjectType.1206473335" name="OMNeT++ Simulation" projectType="org.omnetpp.cdt.omnetppProjectType"/>
+</storageModule>
+</cproject>
